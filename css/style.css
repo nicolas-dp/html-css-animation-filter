@@ -5,6 +5,7 @@
     /* ESERCIZIO 1*/
     transition: background-color 1s;
 }
+
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -12,6 +13,7 @@
     /* ESERCIZIO 2 */
     transition: width 2s linear;
 }
+
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -19,14 +21,16 @@
     /* ESERCIZIO 3*/
     transition: border-radius 1s;
 }
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
     /* ESERCIZIO 4*/
     transition: opacity 4s;
-    
+
 }
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -34,6 +38,7 @@
     background: red;
     transition: all 2s;
 }
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
@@ -43,12 +48,20 @@
     width: 400px;
     transition: all 3s linear;
 }
+
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
 }
+
 .ex-11-icon {
     font-size: 60px;
+
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -62,6 +75,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -70,6 +84,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -86,39 +101,43 @@
 
 .ex-1-square:hover {
     background-color: red;
-    
+
 }
+
 /* #endregion */
 
 /* #region ESERCIZIO 2 */
 
-.ex-2-square:active{
+.ex-2-square:active {
     width: 100%;
 }
+
 /* #endregion */
 
 /* #region ESERCIZIO 3 */
 
-.ex-3-square:hover{
+.ex-3-square:hover {
     border-radius: 50%;
 }
+
 /* #endregion */
 
 /* #region ESERCIZIO 4 */
 
-.ex-4-square{
+.ex-4-square {
     opacity: 0;
 }
+
 /* #endregion ESERCIZIO 4 */
 
 /* #region ESERCIZIO 5 */
 
-.ex-5-square:hover{
+.ex-5-square:hover {
     width: 100px;
     height: 100px;
 }
 
-.ex-5-square:active{
+.ex-5-square:active {
     width: 20px;
     height: 20px;
 }
@@ -127,7 +146,7 @@
 
 /* #region ESERCIZIO 6 */
 
-.ex-6-img:hover{
+.ex-6-img:hover {
     filter: grayscale(1);
 }
 
@@ -135,19 +154,20 @@
 
 /* #region ESERCIZIO 7 */
 
-.ex-7-img:hover{
+.ex-7-img:hover {
     filter: blur(5px) invert(1);
-    
+
 }
 
-.ex-7-img{
-    transition: filter 3s linear;    
+.ex-7-img {
+    transition: filter 3s linear;
 }
+
 /* #endregion */
 
 /* #region ESERCIZIO 8 */
 
-.ex-8-img:hover{
+.ex-8-img:hover {
     filter: opacity(70%) invert(1);
     border-radius: 5%;
 }
@@ -157,7 +177,7 @@
 
 /* #region ESERCIZIO 9 */
 
-.ex-9-img:hover{
+.ex-9-img:hover {
     filter: opacity(70%) grayscale(1);
     border-radius: 5%;
     width: 500px;
@@ -165,6 +185,34 @@
 }
 
 
+
+
+/* #endregion */
+
+/* #region ESERCIZIO 10 */
+
+@keyframes rotate {
+    100% {
+        transform: rotate(357deg);
+    }
+}
+
+/* #endregion */
+
+/* #region ESERCIZIO 11 */
+
+@keyframes rotate-2 {
+    80% {
+        transform: rotate(270deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation-name: rotate-2;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-delay: 0.1s;
+}
 
 
 /* #endregion */
