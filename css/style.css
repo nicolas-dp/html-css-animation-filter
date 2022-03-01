@@ -41,6 +41,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 3s linear;
 }
 .ex-10-icon {
     font-size: 60px;
@@ -142,4 +143,28 @@
 .ex-7-img{
     transition: filter 3s linear;    
 }
+/* #endregion */
+
+/* #region ESERCIZIO 8 */
+
+.ex-8-img:hover{
+    filter: opacity(70%) invert(1);
+    border-radius: 5%;
+}
+
+
+/* #endregion */
+
+/* #region ESERCIZIO 9 */
+
+.ex-9-img:hover{
+    filter: opacity(70%) grayscale(1);
+    border-radius: 5%;
+    width: 500px;
+    margin: 0;
+}
+
+
+
+
 /* #endregion */
