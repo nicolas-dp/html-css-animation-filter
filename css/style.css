@@ -216,3 +216,38 @@
 
 
 /* #endregion */
+
+/* #region ESERCIZIO 12 */
+@keyframes space_left {
+    0% {
+        position: absolute;
+        top: -10px;
+        left: 68%;
+        background: #f5f5f5;
+    }
+}
+
+@keyframes space_right {
+    10% {
+        position: absolute;
+        bottom: -10px;
+        right: 68%;
+        background: #f5f5f5;
+        width: 60px;
+        height: 20px;
+    }
+}
+
+.ex-12-top-white {
+    animation-name: space_left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-bottom-white {
+    animation-name: space_right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* #endregion */
